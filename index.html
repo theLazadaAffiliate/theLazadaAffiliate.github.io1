@@ -71,13 +71,13 @@ Link to the quiz: bit.ly/lapquiz</p>Posted by <a href="https://www.facebook.com/
 <section id="earnings-slider" class="tutorial">
 <!-- Addition -->
     <h1>Find out how much you could earn</h1>
-	<h2>*Typical earnings of current affiliates.</h2>
+	<h2>Number of Affiliate Links posted:<div class="calc-count">1</div>
+    Clicks: <span class="calc-total-price"></span><br>
+    Commission: <span class="calc-price"></span></h2>
     <div style="margin-top: 50px; text-align: center;">
 		  <input class="calc-range m-top-20" type="range" min="1" max="200" step="1" value="1">
     </div>
-    <h2>Number of Affiliate Links posted:<div class="calc-count">1</div>
-    Clicks: <span class="calc-total-price"></span><br>
-    Commission: <span class="calc-price"></span></h2>
+
 
 
   <h1>Ready to get started? <br>Here are some ways to promote.</h1>
@@ -366,7 +366,7 @@ tariff.forEach(function(num, item) {
 	if (tariff[item].begin <= i) {
     totalPrice = tariff[item].price;
     $('.calc-total-price').text(i*25);
-    $('.calc-price').text("$"+totalPrice+" per month");
+    $('.calc-price').text("Php "+totalPrice*50+" per month");
     };
   //console.log(tariff[item].begin);
 });
