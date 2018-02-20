@@ -2,13 +2,13 @@
 // Typed.js
 $(function(){
 	$(".typed").typed({
-		strings: ["content", "Youtube videos", "Makeup reviews", "Facebook Page", "content"],
+		strings: ["content", "Youtube videos", "Makeup reviews", "Facebook Page"],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 		stringsElement: null,
 		// typing speed
 		typeSpeed: 25,
 		// time before typing starts
-		startDelay: 1200,
+		startDelay: 500,
 		// backspacing speed
 		backSpeed: 20,
 		// time before backspacing
@@ -16,7 +16,7 @@ $(function(){
 		// loop
 		loop: true,
 		// false = infinite
-		loopCount: 5,
+		loopCount: false,
 		// show cursor
 		showCursor: true,
 		// character for cursor
