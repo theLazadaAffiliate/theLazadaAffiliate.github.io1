@@ -5,8 +5,7 @@
     <link rel="icon" type="image/x-icon" href="https://gallery.mailchimp.com/bdfe87449c9a116132fc8fca9/images/10b0cbcb-9d5d-4dbf-9b51-d307505abb13.png">
     <link type="text/css" href="css/pages.css" media="all" rel="stylesheet">
     <link type="text/css" href="css/style.css" rel="stylesheet">
-	
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!-- Begin Jekyll SEO tag v2.3.0 -->
 <title>Guide | Lazada Affiliate Program</title>
 <meta property="og:title" content="Get Started with the Lazada Affiliate Program">
@@ -38,10 +37,10 @@
     <a href="https://pages.github.com/"><img src="" alt="" class="logo"></a>
     <a href="https://facebook.com/groups/LazadaAffiliatesPHGroup" class="help-link">Facebook Group</a>
 
-    <h1>Monetize your<br> 
-	<span class="typed"></span><br>
-	with Lazada.</h1>
-    <h2 style="padding: 10px;" >With the Lazada Affiliate Program, monetize your 
+    <h1>Monetize your<br>
+    <span class="typed"></span><br>
+    with Lazada.</h1>
+    <h2 style="padding: 10px;" >With the Lazada Affiliate Program, monetize your
 Website, Facebook page, and Youtube Channel</h2>
 
     <div id="slideshow">
@@ -62,16 +61,16 @@ Website, Facebook page, and Youtube Channel</h2>
 
 
 <section id="tutorial" class="tutorial">
-<!-- Addition -->
-    <h1>Find out how much you could earn.</h1>
-	<strong><h2>Number of Links posted <div class="calc-count">0</div></strong>
-    with estimated monthly clicks of:<br> <span class="calc-total-price">0</span><br>
-    Estimated commission<br><strong><span class="calc-price">0</span></strong></h2>
+<!-- Earning Calculator -->
+  <h1>Find out how much you could earn.</h1>
+	<strong><h2>Number of Links posted <div class="links">0</div></strong>
+    with estimated monthly clicks of:<br> <span class="clicks">0</span><br>
+    Estimated commission<br><strong><span class="earnings">0</span></strong></h2>
     <div style="margin-top: 50px; text-align: center;">
 		  <input class="calc-range m-top-20" type="range" min="1" max="200" step="1" value="1">
     </div>
 	<h2>*Data is based on earnings of other affiliates, your strategy determines your results.</h2>
-
+<!-- Earning Calculator End -->
 
 
   <h1>Ready to get started? <br>Here are some ways to promote.</h1>
@@ -337,6 +336,13 @@ Website, Facebook page, and Youtube Channel</h2>
 
 
 <script src="data/jquery.js.download"></script>
+
+<!-- Custom JS -->
+<script src="js/custom.js"></script>
+
+<!--Script for TypedJs-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+
 <script>window.slides = {"bootstrap":"Bootstrap","yeoman":"Yeoman","facebookdesign":"Facebook Design","foundation":"Foundation","ghtraining":"GitHub Training","adobeos":"Adobe Open Source","jekyllrb":"Jekyll","electron":"Electron","semanticui":"Semantic UI","microsoft":"Microsoft on GitHub"}</script>
 <script src="data/application.js.download"></script>
 
@@ -347,44 +353,8 @@ Website, Facebook page, and Youtube Channel</h2>
     <li><a href="https://www.facebook.com/lazadaaffiliateprogram.ph">Facebook Group</a></li>
   </ul>
 </footer>
-<!-- Custom JS -->
-<script src="js/custom.js"></script>
-<!--Script for TypedJs-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
 
-<!--Script for Calculator -->
-<script>
-$(document).ready(function($) {
-
-$('.item-type').click(function() {
-	$('.item-type').removeClass('item-type-active');
-  $(this).addClass('item-type-active');
-  });
-
-function rangeCalc(i) {
-var totalPrice = 0;
-var tariff = [{begin:1, price:0}, {begin:4, price:0}, {begin:8, price:38}, {begin:12, price:57}, {begin:20, price:95}, {begin:28, price:133}, {begin:40, price:190}, {begin:52, price:247}, {begin:60, price:285}, {begin:72, price:342}, {begin:92, price:437}, {begin:120, price:570}, {begin:140, price:665}, {begin:160, price:760}, {begin:172, price:817}, {begin:180, price:855}, {begin:192, price:912}, {begin:200, price:950},];
-
-tariff.forEach(function(num, item) {
-	if (tariff[item].begin <= i) {
-    totalPrice = tariff[item].price;
-    $('.calc-total-price').text(i*25);
-    $('.calc-price').text("Php "+totalPrice*50+" per month");
-    };
-  //console.log(tariff[item].begin);
-});
-};
-
-$('.calc-range').on('input', function() {
-	$('.calc-count').text(this.value);
-  rangeCalc(this.value);
-});
-
-//rangeCalc();
-
-});
-</script>
-
+<!-- Google Analytics -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
