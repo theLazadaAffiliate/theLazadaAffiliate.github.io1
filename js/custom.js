@@ -54,7 +54,7 @@ clickRange.forEach(function(num, item) {
 	if (clickRange[item].begin <= i) {
     totalEarnings = clickRange[item].price * 50;
     $('.clicks').text(i*25);
-    $('.earnings').text("Php "+totalEarnings.toLocaleString()+" per month");
+    $('.earnings').text("₱ "+totalEarnings.toLocaleString());
     }
   //console.log(tariff[item].begin);
 });
