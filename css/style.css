@@ -7,12 +7,12 @@ h4 {padding: 6%;}
 h1 {margin: 3%; padding-top: 10%}
 
 }
-
+/*
 /*SLIDER RANGE*/
 input[type=range] {
   -webkit-appearance: none;
   /*margin: 0 auto;*/
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   width: 50%;
 }
 input[type=range]:focus {
@@ -27,21 +27,21 @@ input[type=range]::-webkit-slider-runnable-track {
   cursor: pointer;
   /*animate: 0.2s;*/
   /*box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;*/
-  background: #5C5C5C;
+  background: #D8D8D8;
   border-radius: 25px;
   /*border: 0px solid #000101;*/
   transition: background 0.1s ease;
 }
 input[type=range]::-webkit-slider-thumb {
   /*box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;*/
-  border: 3px solid #5C5C5C;
-  height: 40px;
-  width: 40px;
+  border: 2px solid #D3D3D3;
+  height: 26px;
+  width: 26px;
   border-radius: 50px;
-  background: #fff;
+  background: #F8F8F8;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: -19px;
+  margin-top: -12px;
   transition: border 0.1s ease;
 	-webkit-box-shadow: 0px 11px 27px -12px rgba(145,94,31,1);
 	-moz-box-shadow: 0px 11px 27px -12px rgba(145,94,31,1);
@@ -106,7 +106,7 @@ input[type=range]::-ms-thumb {
   height: 30px;
   width: 30px;
   border-radius: 30px;
-  background: #fff;
+  background: #d3d3d3;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -14px;
@@ -120,21 +120,20 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 input[type=range]:hover::-webkit-slider-runnable-track {
-  background: #ffd83c;
+  background: #d3d3d3;
 }
 input[type=range]:hover::-webkit-slider-thumb {
   /*background: #fff;*/
-  border-color: #ffd83c;
+  border-color: #d3d3d3;
 -webkit-box-shadow: 0px 6px 27px -12px rgba(145,94,31,1);
 -moz-box-shadow: 0px 6px 27px -12px rgba(145,94,31,1);
 box-shadow: 0px 6px 27px -12px rgba(145,94,31,1);
 }
 input[type=range]:active::-webkit-slider-runnable-track {
-  background: #FF7700;
+  background: #C0C0C0;
 }
 input[type=range]:active::-webkit-slider-thumb {
   /*background: #fff;*/
-  border-color: #FF7700;
 -webkit-box-shadow: 0px 6px 27px -12px rgba(145,94,31,1);
 -moz-box-shadow: 0px 6px 27px -12px rgba(145,94,31,1);
 box-shadow: 0px 6px 27px -12px rgba(145,94,31,1);
@@ -151,6 +150,20 @@ input[type=range]:active::-moz-range-track {
   background: #e52e5e;
 }
 input[type=range]:active::-moz-range-thumb {
-  background: #fff;
+  background: #d3d3d3;
   border-color: #e52e5e;
+}
+
+.flex  {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  padding: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 33.3333%;
+  flex-basis: 300px;
+  text-align: center;
 }
