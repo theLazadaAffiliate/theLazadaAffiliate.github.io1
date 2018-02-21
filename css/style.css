@@ -161,6 +161,7 @@ input[type=range]:active::-moz-range-thumb {
 
 .flex-item {
   padding-top: 35px;
+  padding: 8px;
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 33.3333%;
